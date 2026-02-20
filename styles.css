@@ -1787,10 +1787,19 @@ main h2{
         width: 100%;
     }
 
+    #mobile-uoc{
+        height: 460px !important;
+        min-height: 460px !important;
+        max-height: 460px !important;
+        margin-bottom: 30px !important; 
+        padding: 20px !important;
+    }
+
     #mobile-last{
-        height: 340px !important;
-        min-height: 340px !important;
-        max-height: 340px !important;
+        margin-top: 490px !important;
+        height: 740px !important;
+        min-height: 740px !important;
+        max-height: 740px !important;
         margin-bottom: 30px !important;
         padding: 20px !important;
     }
