@@ -1,0 +1,549 @@
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+#equipos{
+    padding-left: 100px;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+.teams{
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.teams:hover{
+    transform: scale(1.125);
+}
+
+#menu img{
+    position: fixed;
+    transform: scale(1.5);
+    top: 35px;
+    left: 10px;
+    cursor: pointer;
+}
+
+#menu ul{
+    margin-left: 130px;
+    list-style: none;
+}
+
+#menu ul li{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+#menu ul li a{
+    padding: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+}
+
+.jornadas{
+   padding-top: 3vh;
+   margin-right: 20vw !important;
+}
+
+.jornadas h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.menuLateral{
+    margin-top: 1.5vh;
+    width: 20vw !important; 
+    border-left: 1px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(to bottom, #dc3545, white);
+    height: 50vh;
+    position: fixed;
+    right: 0;
+}
+
+.menuLateral a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding: 15px 0 10px 2px;
+    border-bottom: 1px solid;
+    border-image-slice: 1;
+    border-width: 4px;
+    border-image-source: linear-gradient(to right, #dc3545, white);    
+}
+
+.menuLateral a:hover{
+    color: black;
+    cursor: default;
+}
+
+.menuLateral .un:hover{
+    color: #9e2338;
+    cursor: pointer;
+}
+
+.taulaJornada{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.taulaJornada tr td{
+    padding: 10px;
+    min-width: 200px;
+    max-width: 200px;
+}
+
+.partitTaula{
+    background-color: rgb(245, 245, 245);
+}
+
+.partitTaula:hover{
+    background-color: rgb(240, 240, 240);
+}
+
+.partitTaula td h2{
+    font-size: 4em;
+    font-weight: 700;
+    color: #dc3545;
+}
+
+.partitTaula td h5{
+    font-size: 1em;
+    font-weight: 600;
+    color: #6b1820;
+}
+
+.partitNull{
+    border: none;
+}
+
+.hacerQuiniela{
+    margin-top: 6px;
+    padding: 10px 25px 10px 25px;
+    background-color: #dc3545;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+}
+
+.hacerQuiniela:hover{
+    background-color:   rgb(165, 85, 85);
+}
+
+.quiniela{
+    height: 76vh;
+    width: 48vw;
+    background-color: rgb(225, 225, 225);
+    border-radius: 15px;
+    position: fixed;
+    left: 27%;
+    top: 58%;
+    transform: translate(-20%, -55%);
+    z-index: 10;
+}
+
+.partitsQuiniela{
+    color: wheat;   
+}
+
+.enviarQuiniela{
+    border: none;
+    padding: 6px 20px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 7px;
+}
+
+.cerrarQuiniela{
+    padding: 0 20px 0 20px;
+    position: fixed;
+    left: 97%;
+    top: 4%;
+    transform: translate(-50%, -93%);
+    border: none;
+    background-color: transparent;
+    color: #dc3545;
+    font-weight: 900;
+}
+
+.enviarQuiniela:hover{
+    background-color: rgb(179, 83, 83);
+}
+
+.cerrarQuiniela:hover{
+    color:  rgb(165, 25, 25);
+}
+
+.izq{
+    border-radius: 15px 0 0 15px;
+}
+
+.der{
+    border-radius: 0 15px 15px 0;
+}
+
+.navbar li{
+    border-bottom: 1px solid transparent;
+}
+.navbar li:hover{
+    border-bottom: 1px solid white;
+}
+
+.btn-left{
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    transform: translate(-1%, -50%);
+    border: none;
+    background-color: transparent; 
+    font-size: 40px;
+    color: #6b1820;
+}
+
+.btn-right{
+    position: fixed;
+    right: 10.5vw;
+    top: 50%;
+    transform: translate(-10.5vw, -50%);
+    border: none;
+    background-color: transparent; 
+    font-size: 40px;
+    color: #6b1820;
+}
+
+.btn-left:hover, .btn-right:hover{
+    color: #9e2338;
+}
+
+#quinielaGenerada{
+    height: 91%;
+    margin-top: 1%;
+    margin-bottom: 1.25%;
+    vertical-align: middle;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#quinielaGenerada tr td{
+    max-width: 100px;
+}
+
+#comprobarApuesta{
+    position: fixed;
+    right: 1vw;
+    top: 88.5%;
+    transform: translate(-1vw, -50%);
+    border: none;
+    padding: 10px 40px 10px 40px;
+    background-color: #dc3545;
+    color: white;
+    width: 20vw;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+#comprobarApuesta:hover{
+    background-color: #9e2338 ;
+}
+
+#acerts{
+    position: fixed;
+    right: 30vw;
+    top: 55vh;
+    transform: translate(-25%, -50%);
+    z-index: 1000;
+    height: 62vh;
+}
+
+.acert{
+    background-color: rgb(16, 197, 16);
+    padding-top: 4.1vh;
+    width: 2.1vw;
+    height: 100%;
+    border: 2px solid black;
+    animation: final2 1s;
+}
+.error{
+    background-color: #9e2338;
+    border: 2px solid black;
+    padding-top: 4.1vh;
+    width: 2.1vw;
+    height: 2.1vh;
+    animation: final2 1s;
+}
+
+#numAcerts{
+    display: none;
+    text-align: center;
+    position: fixed;
+    background-color: rgb(0, 163, 238);
+    color: white;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    vertical-align: middle;    
+    text-transform: uppercase;
+    z-index: 100;
+    padding: 38vh 4.5vw 0 4.5vw;
+    animation: final2 1s;
+}
+
+@keyframes final2{
+    from {transform: scale(2);}
+    to {transform: scale(1);}
+}
+
+#numAcerts h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#numAcerts h1{
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#difuminat{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 1000vw;
+    height: 130vh;
+    background-color: black;
+    z-index: 1;
+    opacity: 45%;
+}
+
+.jornadesHistoriques{
+    background-color: #dc3545;
+    color: white;
+    padding: 15px 10px 10px 10px;
+    min-height: 80px;
+    max-height: 80px;
+    min-width: 100px;
+    max-width: 100px;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-top: 20px;   
+}
+
+.jornadesHistoriques p{
+   font-weight: 700; 
+   font-size: 1.1em;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   
+}
+
+.jornadesHistoriques:hover{
+    background-color: #c73140;
+    cursor: default;
+}
+
+.title{
+    margin-top: 35px;
+}
+
+.rojo{
+    background-color: #c73140;
+    color: white;
+
+}
+
+.seccion{
+    margin-top: 20px !important;
+    margin-bottom: 30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.seccion img{
+    width: 50vw;
+}
+
+.seccion .text{
+    width: 45%;
+    margin: auto;
+    cursor: default;
+}
+
+.seccion h3{
+  font-size: 3.3em;
+  margin-bottom: 70px;
+}
+
+.seccion h5{
+  font-size: 1.4em;
+}
+
+.seccion h4{
+  font-size: 2em;
+  margin: 30px;
+}
+
+.btn a{
+    text-decoration: none;
+    color: black;
+}
+
+#submenu{
+    display: none;
+}
+
+.btnEnlace{
+    margin-top: 5%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    width: 30%;
+    transition-duration: 1s;
+}
+
+.btnEnlace:hover{
+    color: #6b1820;
+    background-color: rgb(225, 225, 225);
+    animation: ancho .7s;
+    width: 100%;
+    transition-duration: 1s;
+}
+
+@keyframes ancho{
+    from {width: 30%;}
+    to {width: 100%;}
+}
+
+.btnEnlace a{
+    color: #6b1820;
+    text-decoration: none;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 1.5em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.btnEnlace a:hover{
+    color: #6b1820;
+}
+
+#generaRapit{
+    display: none;
+    position: fixed;
+    bottom: 0;
+    background-color: #9e2338;
+    width: 100%;
+    height: 23%;
+    text-align: center;
+    animation: missatge 2s;
+}
+
+@keyframes missatge{
+    from {bottom: -20%;}
+    to {bottom: 0%;}
+}
+
+#generaRapit h2{
+    padding: 0 0 40px 0;
+    color: white;
+}
+
+#generaRapit button:not(.cerrarGeneraRapit){
+    padding: 10px 80px 10px 80px;
+    margin-left: 15px;
+    margin-right: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(225, 225, 225);
+    font-weight: 700;
+    font-size: 22px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+#generaRapit button:hover:not(.cerrarGeneraRapit){
+    background-color: rgb(215, 215, 215);
+}
+
+#generaRapit .linea{
+    margin-top: 2px;
+    width: 100%;
+    padding: 2px;
+    height: 5px;
+    background-color: yellow;    
+    animation: cargando 15s;
+}
+
+@keyframes cargando{
+    from {width: 0%;}
+    to {width: 100%;}
+}
+
+.cerrarGeneraRapit{
+    padding: 10px 20px 0 20px;
+    margin-left: 96%;
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-weight: 900;
+}
+ 
+input[type="radio"] {
+    -ms-transform: scale(2); /* IE 9 */
+    -webkit-transform: scale(2); /* Chrome, Safari, Opera */
+    transform: scale(2);
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 1px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -4px;
+    left: -1px;
+    position: relative;
+    background-color: #dc3545;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+}
+
+#sinCambios{
+    display: none;
+    position: fixed;
+    top: 10vh;
+    left: 10vh;
+    width: 80vw;
+    height: 90vh;
+    z-index: 10;
+    background-color: transparent;
+}

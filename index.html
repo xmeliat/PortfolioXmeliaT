@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xec Melià Trobat | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>  
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="shortcut icon" href="img/splash.webp" type="image/x-icon">
+</head>
+<body scroll="no">
+    <header>
+        <nav class="navbar navbar-expand-lg">
+          <span class="container-fluid d-flex">
+            <a class="navbar-brand" href="#"><b>X</b>MELIÀT<span class="dot">.</span></a>
+            <button class="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon shadow-none"></span>
+            </button>
+            <nav class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto d-flex">
+                    <li class="nav-item nav-item-1">
+                        <a class="nav-link active" aria-current="page" href="#"><i class="fa-sharp fa-solid fa-house"></i> Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="scrollToSection('about', 17)"><i class="fa-solid fa-user-graduate"></i> Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="scrollToSection('trayectoria', 17)"><i class="fa-solid fa-hourglass-half"></i> Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="scrollToSection('skills', 19)"><i class="fa-solid fa-star"></i> Habilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" onclick="scrollToSection('proyectos', 17.5)">
+                            <i class="fa-solid fa-book"></i> Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contacto"><i class="fa-solid fa-envelope-open-text"></i> Contacto</a>
+                    </li>
+                </ul>
+                <nav class="links">
+                  <a target=”_blank” href="https://www.linkedin.com/in/xec-meli%C3%A0-trobat-a4455823a/"><i class="fab fa-linkedin" title="linkedin"></i></a>
+                  <!-- <a target=”_blank” href="https://www.infojobs.net/xec-melia-trobat.prf"><img class="infojobs" src="img/ij-logo_reduced.svg" title="infojobs" alt=""></a> -->
+                </nav>
+            </nav>
+          </span>
+        </nav>
+    </header>
+
+    <main class="contenido d-flex">
+        <article class="textos" id="textos">
+            <span class="hello">Hola Mundo</span>
+            <h1>Soy Xec<br><span id="multiText">Ingeniero informático</span></h1>
+            <p>Busco un trabajo remoto en el que pueda acomodar mis horarios para 
+                compaginar mi puesto de técnico informático. Dispongo de licencia de conducir tipo B</p>
+            <section class="btns">
+                <button onclick="window.open('archivos/CV Xec Melià Trobat.pdf'),'”_blank”'"><i class="fa-solid fa-file-lines"></i> Descargar CV</button>
+                <button onclick="scrollToSection('proyectos', -100)"><i class="fa-solid fa-envelope-open-text"></i> Contrátame</button>
+            </section>
+        </article>
+        <figure class="images">
+            <img id="tete" scroll="no" src="img/teteSinFondo.webp" alt="">
+            <img id="splash" src="img/splash.webp" alt="">
+        </figure>        
+    </main>
+
+    <main class="about" id="about">
+        <h2>Sobre mí</h2> 
+        <article class="d-flex justify-content-between animate__animated animate__slideInLeft" style="animation-duration: 1.8s;">
+            <section>
+                <h3><i class="fa-solid fa-hand" style="color: #f0bc03 !important;"></i> Introducción</h3>
+                <p>Soy Xec Melià, una persona apasionada por la tecnología y la creación digital, con una fuerte curiosidad por entender cómo funcionan los sistemas y cómo pueden 
+                    mejorarse mediante soluciones eficientes y bien diseñadas. Disfruto enfrentándome a nuevos retos, aprendiendo constantemente y combinando pensamiento analítico 
+                    con creatividad para aportar valor real en cada proyecto. Mi enfoque se basa en la mejora continua, la responsabilidad y la búsqueda de resultados prácticos que
+                     tengan un impacto positivo tanto en usuarios como en entornos profesionales.</p>
+                <h3><i class="fa-solid fa-medal" style="color: #f0bc03 !important;"></i> Experiencia</h3>
+                <p>Actualmente me encargo del mantenimiento y gestión de los equipos informáticos del Aeropuerto de Menorca, incluyendo puestos de ofimática, mostradores de 
+                    facturación y puertas de embarque, garantizando su correcto funcionamiento diario. Mi formación en Ingeniería Informática, Desarrollo de Aplicaciones Web y 
+                    diseño gráfico me permite combinar visión técnica y creatividad para crear soluciones eficientes y bien estructuradas. Además, en mi tiempo libre trabajo 
+                    habitualmente con entrenamiento y experimentación de modelos de inteligencia artificial, destacando por mi capacidad de aprendizaje, adaptación y orientación 
+                    a la resolución de problemas.</p>
+                <h3><i class="fa-solid fa-trophy" style="color: #f0bc03 !important;"></i> Aptitudes</h3>
+                <p>Cuento con aptitudes técnicas en desarrollo web full-stack utilizando tecnologías como Java, JavaScript, PHP, HTML, CSS y bases de datos SQL, además de control de 
+                    versiones con GitHub y despliegue de proyectos web. Tengo experiencia en administración de sistemas Windows y Linux, instalación y mantenimiento de software 
+                    corporativo, soporte técnico y gestión de equipos en entornos empresariales. También trabajo con herramientas de diseño y producción multimedia como Photoshop, 
+                    Illustrator, InDesign, Premiere Pro y DaVinci Resolve. En mi tiempo libre experimento con entrenamiento y ajuste de modelos de inteligencia artificial, ampliando 
+                    continuamente mis conocimientos tecnológicos y aplicando buenas prácticas de desarrollo y resolución de problemas</p>
+                <h3><i class="fa-solid fa-globe" style="color: #f0bc03 !important;"></i> Idiomas</h3>
+                <p>Hablo castellano y catalán nativos, e inglés con certificación oficial nivel B2</p>
+                    <img src="img/carta.webp" alt="" id="mobile-back-image" class="back-image">
+            </section>
+            <figure class="image-container">
+                <img src="img/carta.webp" alt="" class="front-image">
+                <img src="img/sin-gente.webp" alt="" class="back-image">
+            </figure>
+        </article>       
+    </main>
+
+    <main class="trayectoria" id="trayectoria">
+        <h2>Trayectoria</h2>
+        <section class="timeline">
+            <div class="timeline-line"></div>
+            <div class="timeline-container">
+            <div class="timeline-item left animate__animated animate__slideInLeft">
+                <div class="timeline-content animate__animated" id="hola">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-ruler"></i>
+                        </div>
+                        <div>
+                            <h3>Técnico en Diseño Gráfico e Impreso</h3>
+                            <h4>Estudié el Grado Medio de Diseño en Asistencia al Producto Gráfico e Impreso</h4>
+                        </div>
+                    </div>
+                    <p>Aprendí a utilizar el paquete completo de Adobe, con especialización en Photoshop, 
+                        Illustrator e InDesign</p>
+                </div>
+                <div class="timeline-content animate__animated">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-code-compare"></i>
+                        </div>
+                        <div>
+                            <h3>Técnico Superior en Desarrollo de Aplicaciones Web</h3>
+                            <h4>Grado Superior en DAW, aquí descubrí una de mis mayores pasiones: La programación</h4>
+                        </div>
+                    </div>
+                    <p>Adquirí habilidades en programación, aprendí Java, PHP, MySQL y MariaDB para el desarrollo 
+                        backend, y en cuanto al frontend, me enseñaron JavaScript, HTML y CSS. Además, también
+                         me familiaricé con frameworks y bibliotecas como React, Vue.js, Bootstrap, 
+                         jQuery y AJAX</p>
+                    
+                </div>
+                <div class="timeline-content animate__animated">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-microchip"></i>
+                        </div>
+                        <div>
+                            <h3>Ingeniero Informático</h3>
+                            <h4>Actualmente estoy cursando la Ingeniería Informática de forma telemática en la UOC</h4>
+                        </div>
+                    </div>
+                    <p>Actualmente estoy cursando el Grado en Ingeniería Informática en la UOC, dentro del itinerario de Ingeniería del Software, donde estoy adquiriendo conocimientos en análisis y gestión de requisitos, diseño y arquitectura de software, metodologías ágiles como Scrum, desarrollo orientado a objetos, testing, calidad del software, modelado UML e integración continua. Además, he recibido formación en cálculo matemático avanzado, lógica, sistemas y redes y programación de bajo nivel en lenguaje C, comprendiendo el ciclo de vida completo del desarrollo de software y la gestión de requisitos orientados a las necesidades del negocio.</p>
+                        <hr class="mobile-not">
+                    <p class="mobile-not">Este título universitario es online, así que no tengo horarios fijos y puedo combinarlo 
+                        con cualquier trabajo</p>
+                </div>
+            </div>
+              
+            <div class="timeline-item right animate__animated animate__slideInRight">
+                <div class="timeline-content animate__animated">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-gas-pump"></i>
+                        </div>
+                        <div>
+                            <h3>Gasolinera Cepsa</h3>
+                            <h4>Mi primer trabajo</h4>    
+                        </div>
+                    </div>
+                    <p>Trabajé en la Cepsa de Alaior durante 7 meses, incluyendo la temporada alta en Menorca. 
+                        Durante ese tiempo, adquirí una amplia experiencia en atención al público, técnicas de 
+                        comunicación y trabajar bajo presión. Además, me encargué de tareas como el control de 
+                        inventario, la gestión de albaranes, facturas y más</p>
+                </div>
+                <div class="timeline-content animate__animated">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>                        
+                        </div>
+                        <div>
+                            <h3>Marketing Online</h3>
+                            <h4>Prácticas de DAW</h4>
+                        </div>
+                    </div>
+                    <p>Durante un tiempo en el Centro Bit de Menorca, apliqué mis habilidades en diseño gráfico y desarrollo 
+                    web. Edité imágenes y vídeos utilizando software Adobe, creé páginas y aplicaciones a medida, y 
+                    aprendí Wordpress, Elementor y modelaje e impresión 3D</p>
+
+                </div>
+                <div class="timeline-content animate__animated" id="mobile-last">
+                    <div class="d-flex align-items-center">
+                        <div class="icon">
+                            <i class="fa-solid fa-plane"></i>
+                        </div>
+                        <div>
+                            <h3>Técnico Informático de COS S.A</h3>
+                            <h4>Actualmente trabajo como técnico informático en el Aeropuerto de Menorca</h4>
+                        </div>
+                    </div>
+                    <p>Actualmente, me encargo del mantenimiento de sistemas y redes del Aeropuerto de Menorca, asegurando la disponibilidad y el correcto funcionamiento de la 
+                        infraestructura informática. Realizo la instalación, configuración y actualización de sistemas Windows y Linux, así como el despliegue de software corporativo.
+                         Gestiono el diagnóstico y resolución de incidencias de hardware y software en puestos de trabajo y equipos portátiles, además de la administración de 
+                         usuarios y recursos según las políticas establecidas. También llevo a cabo mantenimiento preventivo de equipos, periféricos y cableado estructurado, 
+                         clonación de imágenes para la estandarización de equipos, soporte técnico presencial y remoto a usuarios finales y la documentación técnica e inventario de 
+                         la infraestructura.</p>
+                    <hr>
+                    <p>Además, poseo las siguientes titulaciones de AESA:</p>
+                    <ul>
+                      <li>AVSEC</li>
+                      <li>AVSAF PEATONES</li>
+                    </ul>
+                </div>
+            </div>
+          </section>          
+    </main>
+
+    <main class="skills" id="skills">
+        <h2>Habilidades</h2>
+        <article class="d-flex justify-content-center">
+            <section class="animate__animated skill-section" style="animation-duration: .8s;">
+                <h3><i class="fa-solid fa-laptop-code"></i></h3>
+                <h4>front end</h4>
+                <h5>
+                    <i title="HTML5" class="fa-brands fa-html5" style="color: #ff8800 !important;"></i>
+                    <i title="CSS3" class="fa-brands fa-css3-alt" style="color: #6ca2fe !important;"></i>
+                    <i title="JavaScript" class="fa-brands fa-square-js" style="color: #e1c53d !important;"></i>
+                </h5>
+                <ul>
+                    <li>Apps Responsive</li>
+                    <li>Integración de APIs</li>
+                    <li>Bootstrap</li>
+                    <li>Vue y React Básico</li>
+                </ul>
+            </section>
+            <section class="animate__animated skill-section" style="animation-duration: 1s;">
+                <h3><i class="fa-solid fa-layer-group"></i></h3>
+                <h4>back end</h4>
+                <h5>
+                    <i title="Java" class="fa-brands fa-java" style="color: #cf0707 !important;"></i>
+                    <i title="PHP" class="fa-brands fa-php" style="color: #ff8800 !important;"></i>
+                    <i title="MySQL" class="fa-solid fa-database" style="color: #6ca2fe !important;"></i>
+                </h5>
+                <ul>
+                    <li>Java</li>
+                    <li>AJAX</li>
+                    <li>MySQL & PHP</li>
+                    <li>Encriptación</li>
+                </ul>
+            </section>
+            <section class="animate__animated skill-section" style="animation-duration: 1.2s;">
+                <h3><i class="fa-solid fa-maximize"></i></h3>
+                <h4 style="letter-spacing: 0px !important;">diseño gráfico</h4>
+                <h5>
+                    <img src="img/photoshop.webp" title="Photoshop">
+                    <img src="img/ilustrador.webp" title="Illustrator">
+                    <img src="img/premier.webp" title="Premier Pro">
+                </h5>
+                <ul>
+                    <li>Paquete Adobe:</li>
+                    <li>Photoshop, Illustrator,</li><li>Lightroom, Premier Pro,</li><li>After Effects & Davinci R</li>
+                </ul>
+            </section>
+            <section class="animate__animated skill-section" style="animation-duration: 1.4s;">
+                <h3><i class="fa-solid fa-code"></i></h3>
+                <h4>UX & UI</h4>
+                <h5>
+                    <i title="HTML5" class="fa-brands fa-html5" style="color: #ff8800 !important;"></i>
+                    <i title="CSS3" class="fa-brands fa-css3-alt" style="color: #6ca2fe !important;"></i>
+                    <i title="JavaScript" class="fa-brands fa-square-js" style="color: #e1c53d !important;"></i>
+                </h5>
+                <ul>
+                    <li>Interacciones intuitivas</li>
+                    <li>Diseño visual atractivo</li>
+                    <li>Requisitos del usuario</li>
+                    <li>Testing & debugging</li>
+                </ul>
+            </section>
+            <section class="animate__animated skill-section" style="animation-duration: 1.6s;">
+                <h3><i class="fa-solid fa-globe"></i></h3>
+                <h4 style="letter-spacing: 0px !important;">Mantenimiento</h4>
+                <h5>
+                    <i title="HTML5" class="fa-solid fa-microchip" style="color: #ff8800 !important;"></i>
+                    <i title="JavaScript" class="fa-brands fa-windows" style="color: #6ca2fe !important;"></i>
+                    <i title="CSS3" class="fa-solid fa-wifi" style="color: #e1c53d !important;"></i>
+                </h5>
+                <ul>
+                    <li>Mantenimiento de equipos</li>
+                    <li>Conocimiento en redes</li>
+                    <li>Hardware informático</li>
+                    <li>Conexiones en remoto</li>
+                </ul>
+            </section>
+        </article>    
+    </main>
+
+    <main class="proyectos" id="proyectos">
+        <h2>Proyectos</h2> 
+        <article id="portfolio" class="d-flex">
+            <button id="prev-btn"><i class="fa-solid fa-circle-arrow-right fa-rotate-180"></i></button>
+            <section id="article-1" class="article">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h3>StockMateX</h3>
+                        <p>Descubre StockMateX, una potente aplicación de gestión de stock diseñada para todo tipo de empresas
+                             que comercializan productos. Con StockMateX, podrás optimizar tus operaciones de reabastecimiento
+                            mediante la generación automática de una lista de carencias. Además, podrás gestionar tus
+                            ventas de forma eficiente agregando productos al carrito. Todo ello, en tiempo real sin necesidad 
+                            de recargar la página, gracias a la tecnología AJAX. Podrás agregar, actualizar y 
+                            gestionar tus productos de manera ágil y dinámica, todo en un solo lugar. Simplifica tu gestión 
+                            de stock y lleva tu negocio al siguiente nivel con StockMateX                    
+                        </p>
+                        <nav class="d-flex flex-column">
+                            <h4 class="p-0"><span class="project-status">Estado: </span>Casi finalizado</h4>
+                            <!-- <div class="d-flex align-items-baseline">
+                                <h5>*Contáctame para obtener acceso* &nbsp;</h5>
+                                <a href="./APPS/BD_Stock_App/index.php">Acceder <i class="fa-solid fa-hand-point-left" style="color: #f3f5f8 !important;"></i></a>
+                            </div> -->
+                        </nav>
+                    </div>
+                    <figure>
+                        <img src="img/favicon.webp" alt="favicon">
+                    </figure>
+                </div>
+            </section>
+        
+            <section id="article-2" class="article" style="display: none;">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h3>Planficador de tareas</h3>
+                        <p>Gestiona tus tareas en tiempo real desde cualquier lugar con nuestra aplicación de gestión 
+                            de tareas. Con un práctico calendario integrado, podrás seleccionar fácilmente el día y las
+                             horas para cada una de tus tareas, permitiéndote una planificación personalizada. Ya sea 
+                             que estés en tu escritorio o en movimiento, nuestra aplicación te acompaña en todos tus 
+                             dispositivos, manteniendo tus tareas siempre a tu alcance. Organiza tus proyectos de 
+                             manera efectiva y alcanza tus objetivos con facilidad. ¡Simplifica tu vida y maximiza 
+                             tu productividad con nuestra aplicación de gestión de tareas!             
+                        </p>
+                        <nav class="d-flex flex-column">
+                            <h4><span class="project-status">Estado: </span>Por comenzar</h4>
+                        </nav>
+                    </div>
+                    <figure>
+                        <img src="img/calendario.webp" style="color: #7f00ff !important; transform: scale(1.1);">
+                    </figure>
+                </div>    
+            </section>
+        
+            <section id="article-3" class="article" style="display: none;">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h3>Feed de Instagram</h3>
+                        <p class="w-100">Descubre la aplicación que permitirá dar rienda suelta a tu creatividad. Con 
+                            esta innovadora herramienta, podrás colgar imágenes y explorar cómo quedaría tu nuevo feed 
+                            de Instagram con las nuevas publicaciones. Tendrás la posibilidad de visualizar cómo se 
+                            vería tanto en la app de Instagram como en la versión web, brindándote una perspectiva 
+                            completa de tu contenido. Además, podrás alternar fácilmente entre el modo claro y oscuro, 
+                            adaptando tu experiencia a tus preferencias visuales. ¡Pero eso no es todo! Con nuestro 
+                            simulador, podrás colocar las imágenes a tu gusto, creando una estética personalizada en 
+                            tu feed. Explora todas las posibilidades y diseña un feed único y cautivador                    
+                        </p>
+                        <nav class="d-flex flex-column">
+                            <h4><span class="project-status">Estado: </span>Por comenzar</h4>
+                        </nav>
+                    </div>
+                    <figure>
+                        <img src="img/insta.png" style="transform: scale(1.1);">
+                    </figure>
+                </div>    
+            </section>
+        
+            <section id="article-4" class="article" style="display: none;">
+                <div class="d-flex align-items-center">
+                    <div>
+                        <h3 style="padding-bottom: .5vh !important;">Proyectos creados en DAW</h3>
+                        <p>Algunos de los proyectos que hice mientras aprendía en el Grado Superior de Desarrollo de 
+                            Aplicaciones Web:</p>
+                        <ul>
+                            <li>
+                                Juego de quinielas de fútbol con API
+                                <nav class="d-flex align-items-center justify-content-between justify-content-between">
+                                    <h4><span class="project-status">Estado: </span>Finalizado</h4>
+                                    <a href="./APPS/BetSoccer/index.html" class="mobile-not">Acceder <i class="fa-solid fa-hand-point-left" style="color: #f3f5f8 !important;"></i></a>
+                                </nav>
+                            </li>
+                            <li>
+                                Piedra, papel, tijera, lagarto, spock
+                                <nav class="d-flex align-items-center justify-content-between">
+                                    <h4><span class="project-status">Estado: </span>Finalizado</h4>
+                                    <a href="./APPS/RPSPlus/index.html" class="mobile-not">Acceder <i class="fa-solid fa-hand-point-left" style="color: #f3f5f8 !important;"></i></a>
+                                </nav>
+                            </li>
+                            <li>
+                                El ahorcado
+                                <nav class="d-flex align-items-center justify-content-between">
+                                    <h4><span class="project-status">Estado: </span>Finalizado</h4>
+                                    <a href="./APPS/TheHangedGame/index.html" class="mobile-not">Acceder <i class="fa-solid fa-hand-point-left" style="color: #f3f5f8 !important;"></i></a>
+                                </nav>
+                            </li>
+                            <li>
+                                Aplicacion Web con API de Spotify
+                                <nav class="d-flex align-items-center justify-content-between">
+                                    <h4><span class="project-status">Estado: </span>Actualizable</h4>
+                                    <a href="./APPS/SpotyDev/index.html" class="mobile-not">Acceder <i class="fa-solid fa-hand-point-left" style="color: #f3f5f8 !important;"></i></a>
+                                </nav>
+                            </li>
+                        </ul>
+                    </div>
+                    <figure>
+                        <img src="img/proyectos.gif" alt="favicon">
+                    </figure>
+                </div>    
+            </section>
+        
+            <button id="next-btn"><i class="fa-solid fa-circle-arrow-right"></i></button>
+        </article>
+        
+        <nav class="index">
+            <a href="#article-1" class="active">1</a>
+            <a href="#article-2">2</a>
+            <a href="#article-3">3</a>
+            <a href="#article-4">4</a>
+        </nav>   
+    </main>
+
+    <main class="contacto" id="contacto">
+        <h2>Contacto</h2>
+        <section>
+            <div id="img">
+                <img src="img/london.webp" alt="">
+            </div>
+            <form action="" method="post">
+                <input id="asunto" type="text" placeholder="Introduce el asunto">
+                <textarea id="mensaje" placeholder="Introduce el mensaje"></textarea>
+                <button class="animacion-boton" onclick="window.open('mailto:meliatrobatxec@gmail.com?subject='+ document.getElementById('asunto').value
+                +'&body=' + document.getElementById('mensaje').value); window.location.replace(window.location.href);event.preventDefault()"><i class="fa-solid fa-envelope"></i> Enviar email
+                </button>
+            </form>
+            <article id="contact-card">
+                <div class="img-card">
+                    <img src="img/binibeca.webp" alt="">
+                </div>
+                <h3>Xec Melià Trobat</h3>
+                <p><i class="fa-solid fa-phone"></i> 676 921 656</p>
+                <p><i class="fa-solid fa-envelope"></i> meliatrobatxec@gmail.com</p>
+                <p><i class="fa-solid fa-car"></i> Permiso B y coche propio</p>
+                <div class="d-flex">
+                    <a target=”_blank” href="https://www.linkedin.com/in/xec-meli%C3%A0-trobat-a4455823a/"><i class="fab fa-linkedin" title="linkedin"></i></a>
+                    <!-- <a target=”_blank” href="https://www.infojobs.net/xec-melia-trobat.prf"><img class="infojobs" src="img/ij-logo_reduced.svg" title="infojobs" alt=""></a> -->
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html

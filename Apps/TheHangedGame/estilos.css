@@ -1,0 +1,67 @@
+.btnLletra{
+    background-color: #F8F9FA;
+    border: none;
+    padding: 10px 15px;
+    margin: 2px 8px 2px 2px;
+    border-radius: 5px;
+}
+
+.btnLletra:hover{
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+#menuInferior{
+    position: fixed;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+
+#clasificacionTabla{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 60vh;
+    height: 65vh;   
+    background-color: rgba(209, 209, 209, 0.98);
+    z-index: 100;
+    border-radius: 10px;
+    box-shadow: 0 15px 25px 0 rgba(0,0,0,.4);
+    display: none;
+}
+
+.btnCerrar{
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+}
+
+#mensajeFinal{
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(200,200,200,1);
+    display: none;
+    animation: final 0.5s;
+}
+
+@keyframes final{
+    from {opacity: 0}
+    to {opacity: 1;}
+}
+
+#mensajeFinal2{
+    position: fixed;
+    top: 35%;
+    animation: final2 1s;
+}
+
+@keyframes final2{
+    from {transform: scale(2)}
+    to {transform: scale(1)}
+}

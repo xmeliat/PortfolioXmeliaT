@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amics del Futbol | Apuestas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"rel="stylesheet"integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"/>
+    <link rel="shortcut icon" href="img/jijantes.png" type="image/x-icon" />
+  </head>
+
+  <body id="body">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div id="equipos"></div>
+      </nav>
+      <nav class="navbar navbar-expand-lg bg-danger">
+        <div id="menu" class="w-100">
+          <a href="index.html"><img id="logo" src="./img/jijantes.png" height="100px" alt="" /></a>
+          <ul class="navbar navbar-expand-lg">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="travesses.html">Apuestas</a></li>
+            <li><a href="api.html">ApiFútbol</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container-fluid m-0 p-0">
+      <div class="d-flex">
+        <div class="container-fluid jornadas d-flex justify-content-center flex-column">
+          <div class="container">
+            <h3 id="tituloJornada">Generador de jornada</h3>
+            <table class="taulaJornada" id="jornadaGenerada"></table>
+          </div>
+        </div>
+        <div class="container-fluid menuLateral d-flex flex-column">
+          <a href="#" class="un" onclick="botonJornadaMasc()">Generar nueva jornada</a>
+          <a href="#" class="un" onclick="botonJornadaFem()">Generar nueva jornada (Femenino)</a>
+          <a href="#">Historial de quinielas</a>
+          <div id="quinielasHistorico" class="w-100 p-1 d-flex flex-wrap justify-content-left text-center"></div>
+        </div>
+      </div>
+    </div>
+    <div id="quiniela" class="quiniela text-center text-dark p-4" style="display: none;">
+        <table class="table border-secondary" id="quinielaGenerada"></table>
+        <button id="enviarQuiniela" class="enviarQuiniela" style="display: none;">Enviar</button>
+        <button class="cerrarQuiniela" onclick="amagarQuiniela()" id="cerrarQuiniela">X</button>
+    </div>
+
+    <div id="acerts">
+      <table id="taulaAcerts"></table>
+    </div>
+
+    <div id="numAcerts">
+      <h2>ACERTASTE</h2>
+      <h1>0/0</h1>
+      <h2>PARTIDOS</h2>
+      <button class="btn btn-light mt-5">Aceptar</button>
+    </div>
+
+    <div id="generaRapit">
+      <div class="linea"></div>
+      <button class="cerrarGeneraRapit" onclick="tancaGeneraRapit()">X</button>
+      <h2>¿Quieres generar otra jornada?</h2>
+      <button onclick="botonJornadaMasc()">Masculina</button>
+      <button onclick="botonJornadaFem()">Femenina</button>
+    </div>
+
+    <div id="difuminat"></div>
+    <div id="sinCambios"></div>
+
+    <button class="btn-left" onclick="intercambiarJornada()"><i class="bi bi-arrow-left-circle-fill"></i></button>
+    <button class="btn-right" onclick="intercambiarJornada()"><i class="bi bi-arrow-right-circle-fill"></i></button>
+    <button id="comprobarApuesta" style="display: none;">Comprobar quiniela</i></button>
+
+    <footer class="bg-danger pt-3 pb-1 text-center mt-5 text-light">
+      <h6>Xec Melià Trobat - DWEC II</h6>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  </body>
+</html>
